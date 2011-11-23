@@ -1,18 +1,19 @@
-<plugin name='salesforce' version='0.6.5' grailsVersion='1.1.1 &gt; *'>
-  <author>Zenon Rawley / Carlos Munoz</author>
-  <authorEmail>force@riptide.com</authorEmail>
+<plugin name='riptide-salesforce' version='1.19.0' grailsVersion='1.3.0 &gt; *'>
+  <author>Riptide Software</author>
+  <authorEmail>applications@riptidesoftware.com</authorEmail>
   <title>Grails Salesforce Plugin</title>
-  <description>Provides connectivity to a salesforce instance.
+  <description>\
+Provides and Manages connections to Salesforce from a Grails application.
 </description>
-  <documentation>http://grails.org/Salesforce+Plugin</documentation>
+  <documentation>http://grails.org/plugin/riptide-salesforce</documentation>
   <resources>
+    <resource>BuildConfig</resource>
     <resource>Config</resource>
     <resource>DataSource</resource>
-    <resource>spring.resources</resource>
     <resource>UrlMappings</resource>
-    <resource>com.riptideforce.sfdc.SalesForceBaseService</resource>
-    <resource>com.riptideforce.sfdc.SalesForceCodeGenService</resource>
-    <resource>com.riptideforce.sfdc.SalesForceService</resource>
+    <resource>com.riptide.grails.salesforce.SalesforceGenService</resource>
+    <resource>com.riptide.grails.salesforce.SalesforceService</resource>
   </resources>
   <dependencies />
+  <behavior />
 </plugin>
